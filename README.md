@@ -2,7 +2,7 @@
 This repo will build the [wkhtmltopdf](https://wkhtmltopdf.org/) program in a docker image.
 You can build this image using the following docker command.
 ```bash
-docker build https://github.com/jackstine/html-pdf-builder.git#main
+docker build --platform="linux/amd64" -t=pdfbuilder https://github.com/jackstine/html-pdf-builder.git#main
 ```
 
 Use the following command to run the `pdfbuilder` image, and a mounted point to export the generated files. Here is an example.
